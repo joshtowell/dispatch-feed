@@ -25,7 +25,8 @@ TriggerEvent('chat:addSuggestion', '/getname', 'Get a players name via serverID'
 })
 
 RegisterNetEvent('dispatch_feed:client:displayName', function (playerName)
-    SendMesage('Client', 'Player name: ' .. playerName)
+    SendMessage('Client', 'Player name: ' .. playerName)
+    print(playerName)
 end)
 
 --[[ RegisterNetEvent('FIVEPD::playerDutyChange')

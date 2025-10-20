@@ -6,7 +6,7 @@ end
 
 RegisterCommand('getname', function(_, args)
     if #args < 1 then
-        SendMessage(Client, "You didn't provide a playerID!")
+        SendMessage('Client', "You didn't provide a playerID!")
         return
     end
 
